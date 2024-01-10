@@ -80,15 +80,15 @@ header {
       margin: 0;
 
       img {
+
         width: 175px;
-        /* box-shadow: 14px -6px 20px 3px #ff38986b, -9px 7px 20px 3px #ff91396b; */
-        filter: drop-shadow(20px 30px 55px #ff38986b) drop-shadow(-70px 5px 18px #ff91396b);
+        filter: drop-shadow(50px -34px 86px #ff3898a7) drop-shadow(-56px 53px 90px #ff92399b);
 
         position: absolute;
         right: -70px;
         top: -10px;
 
-        overflow: hidden;
+
       }
     }
   }
@@ -146,6 +146,8 @@ header {
     border-radius: 10px;
     display: flex;
     gap: 20px;
+
+    overflow-x: hidden;
   }
 
   >.cards>div {
