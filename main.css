@@ -81,8 +81,8 @@ header {
 
       img {
         width: 175px;
-        box-shadow: 14px -6px 20px 3px #ff38986b, -9px 7px 20px 3px #ff91396b;
-        /* width: calc(80vw - 450px); */
+        /* box-shadow: 14px -6px 20px 3px #ff38986b, -9px 7px 20px 3px #ff91396b; */
+        filter: drop-shadow(20px 30px 55px #ff38986b) drop-shadow(-70px 5px 18px #ff91396b);
 
         position: absolute;
         right: -70px;
@@ -111,6 +111,7 @@ header {
 }
 
 #press {
+
   display: grid;
   /* width: 400px; */
   grid-template: 50% 50% / 50% 50%;
@@ -120,6 +121,90 @@ header {
   >figure:first-child,
   figure:nth-child(5) {
     display: none;
+  }
+}
+
+#showcase {
+  padding: 30px;
+
+
+
+  >h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #111;
+  }
+
+  >p>a {
+    color: #555;
+    font-weight: 500;
+  }
+
+  .cards {
+
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+  }
+
+  >.cards>div {
+    display: flex;
+    flex-direction: column;
+
+    >figure {
+      margin: 0;
+
+      >img {
+        width: 100%;
+      }
+    }
+
+    >div:nth-child(2) {
+      width: 280px;
+      background-color: #eee;
+      padding: 15px;
+    }
+
+    >div>.second {
+      >p {
+        color: #111;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+
+    >div>.last {
+      >p {
+        color: #777;
+        font-size: 18px;
+      }
+    }
+
+    >div>div {
+      display: flex;
+      justify-content: space-between;
+
+      >p {
+        margin: 0;
+      }
+
+      >img {
+        padding-left: 50px;
+      }
+
+      >.orangeText {
+        color: #FF8139;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      >.topBid {
+        color: #777;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
   }
 }
 
