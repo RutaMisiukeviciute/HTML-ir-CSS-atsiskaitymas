@@ -73,19 +73,20 @@ header {
 
   .paveikslelis {
     position: relative;
+    overflow: hi;
 
     >figure {
       margin: 0;
+      overflow: hidden;
 
       img {
         width: 175px;
         filter: drop-shadow(50px -34px 86px #ff3898a7) drop-shadow(-56px 53px 90px #ff92399b);
 
         position: absolute;
-        right: -70px;
+        right: 0;
         top: -10px;
 
-        overflow-x: hidden;
       }
     }
   }
@@ -183,6 +184,7 @@ header {
     >div>div {
       display: flex;
       justify-content: space-between;
+      overflow: unset;
 
       >p {
         margin: 0;
@@ -223,7 +225,7 @@ header {
 
       >img {
         position: absolute;
-        right: -50px;
+        right: 0;
         bottom: 0;
       }
     }
@@ -374,7 +376,8 @@ footer {
       >figure {
         img {
           width: 328px;
-          position: unset;
+          position: absolute;
+          top: -280px;
           padding-right: 130px;
         }
       }
@@ -388,9 +391,10 @@ footer {
   }
 
   #press {
-    grid-template: 1fr / repeat(5, 1fr);
-    column-gap: 10px;
-    padding: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 10px;
 
     figure:nth-child(2) {
       display: none;
@@ -408,7 +412,7 @@ footer {
 
   #showcase {
     .cards {
-      overflow-x: unset;
+      overflow-x: hidden;
 
       >div>div:nth-child(2) {
         border-bottom-right-radius: 20px;
